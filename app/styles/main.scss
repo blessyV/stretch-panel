@@ -21,7 +21,7 @@
 }
 
 #container {
-	@include transition(all 0.2s ease-in-out);
+	@include transition(all 1s ease-in-out);
 
 	height: 100vh;
 	width: 200%;
@@ -32,35 +32,40 @@
 }
 
 .col {
-	@include transition(all 0.2s ease-in-out);
+	@include transition(all 1s ease-in-out);
 
 	float: left;
 	display: inline-block;
 	width: 12.5%;
 	height: 100%;
 	border: solid black .2em;
+	opacity: 0.5;
 
 	&.active {
-		/*@include transform(translateX(0px));*/
-		@include transition(all 0.2s ease-in-out);
+		@include transition(all 1s ease-in-out);
 
 		width: 50%;
+		opacity: 1;
 	}
 
 	&.col1 {
-		background-color: tomato;
+		/*background-color: tomato;*/
+		background: url('../images/O14A0247.jpg') no-repeat center center fixed;
 	}
 
 	&.col2 {
-		background-color: yellow;
+		/*background-color: yellow;*/
+		background: url('../images/O14A0256.jpg') no-repeat center center fixed;
 	}
 
 	&.col3 {
-		background-color: blue;
+		/*background-color: blue;*/
+		background: url('../images/O14A0456.jpg') no-repeat center center fixed;
 	}
 
 	&.col4 {
-		background-color: pink;
+		/*background-color: pink;*/
+		background: url('../images/O14A0464.jpg') no-repeat center center fixed;
 	}
 }
 
