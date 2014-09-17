@@ -21,7 +21,7 @@
 }
 
 #container {
-	@include transition(all 1s ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 
 	height: 100vh;
 	width: 200%;
@@ -32,7 +32,7 @@
 }
 
 .col {
-	@include transition(all 1s ease-in-out);
+	@include transition(all 0.2s ease-in-out);
 
 	float: left;
 	display: inline-block;
@@ -42,7 +42,7 @@
 	opacity: 0.5;
 
 	&.active {
-		@include transition(all 1s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 
 		width: 50%;
 		opacity: 1;
@@ -50,22 +50,22 @@
 
 	&.col1 {
 		/*background-color: tomato;*/
-		background: url('../images/O14A0247.jpg') no-repeat center center fixed;
+		background: url('../images/O14A0247.jpg') no-repeat center center local;
 	}
 
 	&.col2 {
 		/*background-color: yellow;*/
-		background: url('../images/O14A0256.jpg') no-repeat center center fixed;
+		background: url('../images/O14A0256.jpg') no-repeat center center local;
 	}
 
 	&.col3 {
 		/*background-color: blue;*/
-		background: url('../images/O14A0456.jpg') no-repeat center center fixed;
+		background: url('../images/O14A0456.jpg') no-repeat center center local;
 	}
 
 	&.col4 {
 		/*background-color: pink;*/
-		background: url('../images/O14A0464.jpg') no-repeat center center fixed;
+		background: url('../images/O14A0464.jpg') no-repeat center center local;
 	}
 }
 
